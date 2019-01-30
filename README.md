@@ -1,5 +1,9 @@
 # Webpack Bug Reproduction
 
+## Update
+
+Reported and already fixed in https://github.com/webpack/webpack/issues/8666, but hasn't been released.
+
 ## Problem
 
 Some libraries depend on an exported module to have __esModule === true for understanding the export is an es module. However, module concatenation doesn't work with this behavior that it doesn't have the __esModule property. The issue is reproduced in this repo.
